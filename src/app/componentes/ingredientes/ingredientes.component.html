@@ -1,0 +1,10 @@
+<h2 class="app-title-section">Ingredientes</h2>
+<p>Ingredientes disponiveis</p>
+<div>
+  <div *ngFor="let ingrediente of ingredientes">
+    <button type="button" [title]="ingrediente.nome" class="btn-none w-100" (click)="selectIngrediente(ingrediente)">
+      <span class="float-left">{{ingrediente.nome}}</span> 
+      <span class="float-right">R{{ingrediente.valor | currency}}</span>
+    </button>
+  </div>
+</div>

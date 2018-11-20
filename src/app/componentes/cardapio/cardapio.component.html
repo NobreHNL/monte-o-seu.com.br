@@ -1,0 +1,10 @@
+<h2 class="app-title-section">Cardápio</h2>
+<p>Os lanches mais pedidos estão disponíveis no nosso cardápio. Mesmo assim você pode selecionar e customizar da maneira que desejar!</p>
+<div class="alert alert-secondary row">
+  <div class="col-12 col-sm-6 col-md-3 text-center" *ngFor="let lanche of lanches">
+    <button type="button" [title]="lanche.nome" class="btn-none" (click)="selectLanche(lanche)">
+      <span>{{lanche.nome}}</span><br />      
+      <span class="small" *ngFor="let item of lanche.ingredientes"> - {{item.nome}} <br /></span>
+    </button>
+  </div>
+</div>

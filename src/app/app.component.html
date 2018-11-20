@@ -1,0 +1,39 @@
+<!--    Header -->
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav app-header">
+        <div class="container">
+            <div class="app-branding">
+                <a [routerLink]="'/'" class="logo navbar-brand" title="Monte O Seu">
+                    <div class="row">
+                        <span class="app-logo col-4">
+                            <img class="w-100" src="../assets/imagens/logo-monte-o-seu.png" alt="Monte o Seu">
+                        </span>
+                        <span class="app-brand col-8">
+                            Lanchonete <br />Monte o Seu
+                        </span>
+                    </div>
+                </a>
+            </div>           
+        </div>
+    </nav>
+    <div class="app-view"></div>
+</header>
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-12">
+                <h5 class="text-uppercase">Monte O Seu Oficial</h5>
+                <p class="text-center">Aqui você faz do seu jeito! Monte o seu lanche e aproveite nossas promoções!</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">           
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright - 
+        <a href="/">monteoseu.com.br</a>
+    </div>
+</footer>

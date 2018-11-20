@@ -1,0 +1,144 @@
+{
+  "ingredientes": [
+    {
+      "id": 1,
+      "nome": "Alface",
+      "valor": 0.40,
+      "block": false
+    },
+    {
+      "id": 2,
+      "nome": "Bacon",
+      "valor": 2.00,
+      "block": false
+    },
+    {
+      "id": 3,
+      "nome": "Hambúrguer de carne",
+      "valor": 3.00,
+      "block": false
+    },
+    {
+      "id": 4,
+      "nome": "Ovo",
+      "valor": 0.80,
+      "block": false
+    },
+    {
+      "id": 5,
+      "nome": "Queijo",
+      "valor": 1.50,
+      "block": false
+    }
+  ],
+  "lanches": [
+    {
+      "id": 1,
+      "nome": "X-Bacon",
+      "ingredientes": [
+        {
+          "id": 2,
+          "idLanche": 1,
+          "nome": "Bacon",
+          "valor": 2.00,
+          "block": true
+        },
+        {
+          "id": 3,
+          "idLanche": 1,
+          "nome": "Hambúrguer de carne",
+          "valor": 3.00,
+          "block": true
+        },
+        {
+          "id": 5,
+          "idLanche": 1,
+          "nome": "Queijo",
+          "valor": 1.50,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "X-Burger",
+      "ingredientes": [
+        {
+          "id": 3,
+          "idLanche": 2,
+          "nome": "Hambúrguer de carne",
+          "valor": 3.00,
+          "block": true
+        },
+        {
+          "id": 5,
+          "idLanche": 2,
+          "nome": "Queijo",
+          "valor": 1.50,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "X-Egg",
+      "ingredientes": [       
+        {
+          "id": 3,
+          "idLanche": 3,
+          "nome": "Hambúrguer de carne",
+          "valor": 3.00,
+          "block": true
+        },
+        {
+          "id": 4,
+          "idLanche": 3,
+          "nome": "Ovo",
+          "valor": 0.80,
+          "block": true
+        },
+        {
+          "id": 5,
+          "idLanche": 3,
+          "nome": "Queijo",
+          "valor": 1.50,
+          "block": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "X-Egg Bacon",
+      "ingredientes": [
+        {
+          "id": 2,
+          "idLanche": 4,
+          "nome": "Bacon",
+          "valor": 2.00,
+          "block": true
+        },
+        {
+          "id": 3,
+          "idLanche": 4,
+          "nome": "Hambúrguer de carne",
+          "valor": 3.00,
+          "block": true
+        },
+        {
+          "id": 4,
+          "idLanche": 4,
+          "nome": "Ovo",
+          "valor": 0.80,
+          "block": true
+        },
+        {
+          "id": 5,
+          "idLanche": 4,
+          "nome": "Queijo",
+          "valor": 1.50,
+          "block": true
+        }
+      ]
+    }
+  ] 
+}

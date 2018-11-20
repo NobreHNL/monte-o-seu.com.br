@@ -1,0 +1,13 @@
+<h2 class="app-title-section">Monte o Seu</h2>
+<p>Monte o seu lanche do seu jeito! Selecione os ingredientes ao lado para incrementar seu lanche.</p>
+<div class="row">
+  <div class="col text-center" *ngIf="lanche != undefined">
+    <span>{{lanche.nome}}</span><br/>
+    <div *ngFor="let item of lanche.ingredientes; index as i">
+      <span class="small">{{item.nome}} </span>
+      <button *ngIf="!item.block" class="btn-none p-0 h-auto" (click)="removeIngrediente(i, item)"><fa-icon [icon]="['fas', 'window-close']"></fa-icon></button>
+    </div>
+    <p>R{{lanche.valor | currency}}</p>
+  </div>
+</div>
+<button class="btn btn-info" type="button" title="Custom Lanche" (click)="selectCustomLanche()">Customizar Novo Lanche</button>

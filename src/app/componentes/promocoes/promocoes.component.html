@@ -1,0 +1,12 @@
+<h2 class="app-title-section">Promoções</h2>
+<p>Promoções ativas no Lanche</p>
+<div class="alert alert-warning">
+  <div *ngIf="promocoes.length == 0">
+    <p>Nenhuma promoção ativa.</p>
+  </div>
+  <div *ngFor="let promocao of promocoes">
+    <span *ngIf="promocao == 'Light'">Light - 10% de desconto no lanche com Alface e sem Bacon!</span>
+    <span *ngIf="promocao == 'Hambúrguer'">Muita Carne - A cada 3 porções de carne você paga 2!</span>
+    <span *ngIf="promocao == 'Queijo'">Muito Queijo - A cada 3 porções de queijo você paga 2!</span>
+  </div>
+</div>

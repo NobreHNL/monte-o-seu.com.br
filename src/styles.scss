@@ -1,0 +1,23 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+
+.app-title-section{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    margin: 30px 0 0;
+}
+
+.btn-none{
+    padding: 10px 0;
+    border: none;
+    margin: 0;
+    background: none;
+    -webkit-appearance: none !important;
+    cursor: pointer;
+}
+
+.btn-none:focus {
+    outline: none !important;
+}

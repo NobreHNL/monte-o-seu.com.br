@@ -1,0 +1,22 @@
+<section class="cardapio">
+  <div class="container">
+    <div class="row">
+      <app-cardapio class="col" (selectedLanche)="reciverLanches($event)"></app-cardapio>
+    </div>
+  </div>
+</section>
+<section class="monte-o-seu">
+    <div class="container">
+      <div class="row">
+        <app-lanches [lanche]="lanche_customizavel" (selectedCustomLanche)="reciverLanches($event)" class="col-12 col-md-8"></app-lanches>  
+        <app-ingredientes class="float-left col-12 col-md-4" (selectedIngrediente)="reciverIngredientes($event)"></app-ingredientes>  
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <app-promocoes class="col" [promocoes]="promocoes"></app-promocoes>
+      </div>
+    </div>
+  </section>

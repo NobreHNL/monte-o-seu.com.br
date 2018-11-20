@@ -1,0 +1,36 @@
+header {
+    .app-header {
+        background-color: rgba(233, 113, 43, 0.7);
+        z-index: 1;
+    }
+    .app-branding {
+        .app-logo {
+            font-size: 3.125rem;
+            color: #fff;
+            align-self: center;
+        }
+        .app-brand {
+            font-size: 1.25rem;
+            color: #fff;
+            align-self: center;
+            font-weight: bold;
+            line-height: 1.125rem;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    .app-nav a {
+        font-size: 1.125rem;
+    }
+    .app-view {
+        background: url(../assets/imagens/monte-o-seu.png) no-repeat center center;
+        background-size: cover;
+        height: 600px;
+    }
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+}
